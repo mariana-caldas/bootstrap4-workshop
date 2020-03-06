@@ -8,7 +8,8 @@ In this workshop, we will discuss the main concepts of that front-end component,
 
 This presentation was build in [reveal.js](https://revealjs.com/).
 
-Sources:
+
+### Sources:
 
 [Bootstrap 4 Official Website](https://getbootstrap.com/).
 
