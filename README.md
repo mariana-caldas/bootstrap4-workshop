@@ -4,7 +4,7 @@ In this workshop, we will discuss the main concepts of that front-end component,
 
 [Check out the live demo presentation](https://marianasouza.github.io/bootstrap4-workshop/#/).
 
-[Check out the live demo landing page](https://google.com/).
+[Check out the live demo landing page](https://marianasouza.github.io/bootstrap4-workshop-mylandingpage/).
 
 This presentation was build in [reveal.js](https://revealjs.com/).
 
