@@ -1,71 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>Bootstrap 4 Workshop</title>
+    <title>Bootstrap 4 Workshop</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
 
-		<link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" href="assets/favicon.ico" />
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1>Bootstrap 4</h1>
-					<h4>What we're going to work on?</h4>
-					<ul>
-						<li>What is Bootstrap and when to use it in a project</li>
-						<li>Consulting the official documentation</li>
-						<li>Building a landing page</li>
-					</ul>
-				</section>
-				<section>
-					<h4>What is Bootstrap? When to use that in a project?</h4>
-					<p>
-						On the official website, <a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a>, 
-						Bootstrap is defined as a front-end component <b>library</b>, 
-						an open source toolkit for developing with HTML, CSS, and JS <b>to build responsive and mobile-first projects</b>.
-					</p>
-
-				</section>
-				<section>
-					<h4>What is the difference between a library and a framework?</h4>
-					<p>
-
-					</p>
-
-				</section>
-				<section>
-					<h4>How do I get started?</h4>
-					<p>
-						We are using the BootstrapCDN do start our project:
-					</p>
-					<a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/" target="_blank">https://getbootstrap.com/docs/4.4/getting-started/introduction/</a>
-
-				</section>
-				<section>
-					<h4>The Navbar Component</h4>
-					
-					<section>
-						<p>Go to <a href="https://getbootstrap.com/docs/4.4/components/navbar/" target="_blank">Components > Navbar</a></p>
-						<pre><code data-trim class="hljs">
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Bootstrap 4</h1>
+          <h4>What we're going to work on?</h4>
+          <ul>
+            <li>What is Bootstrap and when to use it in a project</li>
+            <li>Consulting the official documentation</li>
+            <li>Building a landing page</li>
+          </ul>
+        </section>
+        <section>
+          <h4>What is Bootstrap? When to use that in a project?</h4>
+          <p>
+            On the official website,
+            <a href="https://getbootstrap.com/" target="_blank"
+              >https://getbootstrap.com/</a
+            >, Bootstrap is defined as a front-end component <b>library</b>, an
+            open source toolkit for developing with HTML, CSS, and JS
+            <b>to build responsive and mobile-first projects</b>.
+          </p>
+        </section>
+        <section>
+          <h4>What is the difference between a library and a framework?</h4>
+          <p></p>
+        </section>
+        <section>
+          <h4>How do I get started?</h4>
+          <p>
+            We are using the BootstrapCDN do start our project:
+          </p>
+          <a
+            href="https://getbootstrap.com/docs/4.4/getting-started/introduction/"
+            target="_blank"
+            >https://getbootstrap.com/docs/4.4/getting-started/introduction/</a
+          >
+        </section>
+        <section>
+		  <section>
+			<h4>How do I customize my web project?</h4>
+			<p>Use inline styling or add our external stylesheet <b>below</b> the Bootstrap CSS link:</p>
+			<pre><code class="hljs" data-trim data-line-numbers="3|4|3,3-4">
+				<head>
+					<!-- Bootstrap CSS -->
+					<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+					<!-- Your CSS -->
+					<link rel="stylesheet" href="css/main.css">
+				</head>
+			</code></pre>
+		  </section>
+        </section>
+        <section>
+          <section>
+			<h4>The Navbar Component</h4>
+            <p>
+              Go to
+              <a
+                href="https://getbootstrap.com/docs/4.4/components/navbar/"
+                target="_blank"
+                >Components > Navbar</a
+              >
+            </p>
+            <pre><code data-trim class="hljs">
 						<nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top">
 							<a href="#" class="navbar-brand">My Landing Page</a>
 							<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -89,26 +116,26 @@
 							</div>
 						</nav>
 					</code></pre>
-					</section>					
-				</section>
-			</div>
-		</div>
+          </section>
+        </section>
+      </div>
+    </div>
 
-		<script src="js/reveal.js"></script>
+    <script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				hash: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js' },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-	</body>
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        hash: true,
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/highlight/highlight.js" },
+          { src: "plugin/notes/notes.js", async: true }
+        ]
+      });
+    </script>
+  </body>
 </html>
