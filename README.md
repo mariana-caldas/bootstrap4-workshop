@@ -15,4 +15,6 @@ This presentation was build in [reveal.js](https://revealjs.com/).
 
 [Bootstrap 4 Tutorial by Scrimba](https://scrimba.com/g/gbootstrap4).
 
+[freeCodeCamp, frameworks and libraries](https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/).
+
 
