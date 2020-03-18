@@ -17,4 +17,12 @@ This presentation was build in [reveal.js](https://revealjs.com/).
 
 [freeCodeCamp, frameworks and libraries](https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/).
 
+[Photopea, Online Photo Editor](https://www.photopea.com/).
+
+[Pexels, Free stock photos](https://www.pexels.com/).
+
+[TinyPNG, PNG and JPEG compression](https://tinypng.com/).
+
+[How to add Boostrap 4 into a React project](https://www.techiediaries.com/react-bootstrap/).
+
 
